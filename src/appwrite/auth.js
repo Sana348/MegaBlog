@@ -8,8 +8,8 @@ export class AuthService {
 
     constructor() {
         this.client
-            .setEndpoint(conf.appwriteUrl)
-            .setProject(conf.appwriteProjectId);
+            .setEndpoint('https://cloud.appwrite.io/v1')
+            .setProject('6597aa790bbc609d3b46');
         this.account = new Account(this.client);
             
     }
